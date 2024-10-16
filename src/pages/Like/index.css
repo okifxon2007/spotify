@@ -1,0 +1,194 @@
+.conta{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1800px;
+}
+*{
+    margin-top: 0px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.homethreaddf{
+    display: flex;
+}
+.navv{
+    color: white;
+    display: flex;
+    gap: 10px;
+}
+.navv p{
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    text-align: center;
+    background-color: #302761;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.navv i{
+    font-size: 20px;
+    padding-top: 15px;
+}
+.userrr{
+    margin-left: 580px;
+    margin-top: 20px;
+}
+.mainwidthhh{
+    width: 1050px;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, #604EC1 0%, #1f1f1f 49%,#121212 100%);
+}
+.musicmenuonee{
+    margin-top: 20px;
+    width: 950px;
+    height: 350px;
+
+    display: flex;
+    color: white;
+
+}
+.musicmenuonee img{
+    width: 320px;
+    height: 320px;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+.musicmen-p{
+    padding-top: 70px;
+    margin-left: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.musicmen-p h2{
+    font-size: 18px;
+    font-weight: 500;
+}
+.musicmen-p h1{
+    font-size: 90px;
+}
+.musicmen-p p{
+    margin-top: 20px;
+}
+.musicmen-p h3{
+    margin-top: 20px;
+    font-size: 14px;
+    color: silver;
+    font-weight: 400;
+}
+.musictop{
+    background-color: #121212;
+}
+.mpagenav{
+    display: flex;
+    justify-content: space-between;
+}
+.mpagenav option{
+    border: 1px solid transparent;
+}
+.mpagenav select{
+    margin-top: 40px;
+    margin-right: 70px;
+    border: 1px solid transparent;
+    background-color: transparent;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 150px;
+    height: 35px;
+}
+.mpagenav img{
+    width: 290px;
+    margin-top: 20px;
+}
+.mpagenav2 ul{
+    list-style-type: none;
+    gap: 240px;
+    margin-left: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    color: #4E4E4E;
+}
+.mpagenav2 hr{
+    margin-top: 10px;
+    border: 1px solid #4E4E4E;
+}
+.tmcard{
+    margin-top: 5px;
+    display: flex;
+    background-color: transparent;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.tmcard img{
+    width: 60px;
+    height: 60px;
+    margin-left: 10px;
+}
+.tmraqam{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    padding-left: 10px;
+    margin-top: 12px;
+    color: #B3B3B3;
+}
+.tmname{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 2px;
+    font-size: 20px;
+    margin-left: 18px;
+    color: white;
+    font-weight: 500;
+}
+.tmname span{
+    font-weight: 400;
+    font-size: 18px;
+    color:#B3B3B3;
+}
+.albumname{
+    color: #B3B3B3;
+    font-weight: 600;
+    margin-left: 80px;
+    margin-top: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.tmcard h3{
+    font-size: 23px;
+    color: #63CF6C;
+    margin-top: 16px;
+    margin-left: 440px;
+    cursor: pointer;
+    color: white;
+}
+.tmtime{
+    margin-left: 65px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    margin-top: 13px;
+    color: white;
+    font-weight: 400;
+}
+.dvdf{
+    display: flex;
+    width: 850px;
+}
+
+.vww{
+    display: flex;
+}
+.likeic{
+    margin-right: 20px;
+    transform: translateX(-100px);
+    transform: translateY(-5px);
+}
+.mal{
+    color: white;
+    font-size: 28px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-top: 30px;
+    margin-top: 30px;
+}
+
+.dvdff{
+    display: flex;
+    width: 850px;
+}
