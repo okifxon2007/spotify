@@ -5,15 +5,23 @@ const Footermusic = ({ track }) => {
   const [isPlaying, setIsPlaying] = useState(false);
   const audioRef = useRef(null);
 
+  // Effect to automatically play the song when the track changes or is new
   useEffect(() => {
-    if (track && isPlaying) {
+    if (track && audioRef.current) {
       audioRef.current.play();
-    } else if (track) {
-      audioRef.current.pause();
+      setIsPlaying(true); // Set playing to true when track is available
+    } else {
+      setIsPlaying(false); // If no track, stop the audio
     }
-  }, [isPlaying, track]);
+  }, [track]);
 
+  // Toggle play and pause
   const togglePlay = () => {
+    if (isPlaying) {
+      audioRef.current.pause();
+    } else {
+      audioRef.current.play();
+    }
     setIsPlaying(!isPlaying);
   };
 
