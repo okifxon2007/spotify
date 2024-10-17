@@ -4,7 +4,7 @@ import Rightmenu from '../../components/Rightmenu/Rightmenu';
 import '../Music/index.css';
 import grup from '../../img/grup.png';
 import axios from '../../utils/axios';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import Footermusic from '../../components/Footermusic/Footermusic';
 
 const Music = () => {
@@ -16,7 +16,8 @@ const Music = () => {
   const [likes, setLikes] = useState([]);
   const [playingIndex, setPlayingIndex] = useState(null);
   const audioRefs = useRef([]);
-  const [footerTrack, setFooterTrack] = useState(null); // Footer uchun trek ma'lumotlari
+  const [footerTrack, setFooterTrack] = useState(null);
+  const nav = useNavigate()
 
   const fetchDatatwo = async () => {
     try {
@@ -93,13 +94,16 @@ const Music = () => {
     const storedLikes = JSON.parse(localStorage.getItem('likes')) || [];
     setLikes(storedLikes);
   }, []);
+  function navhome(){
+    nav('/')
+  }
 
   return (
     <div className='homethreaddf conta'>
       <Leftmenu />
       <div className="mainwidthh">
         <nav className='nav'>
-          <p><i className="fa-solid fa-arrow-left"></i></p>
+          <p onClick={navhome}><i className="fa-solid fa-arrow-left"></i></p>
           <p><i className="fa-solid fa-arrow-right"></i></p>
         </nav>
 
