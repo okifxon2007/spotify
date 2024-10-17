@@ -152,7 +152,6 @@ const Home = () => {
       <div className="conta">
      <div className="homethreedf">
      <Leftmenu></Leftmenu>
-     
       <div className="mainwidth contai">
         {/* bu yerda navbar qism mavjud */}
       <nav>
