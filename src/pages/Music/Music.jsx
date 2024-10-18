@@ -18,6 +18,7 @@ const Music = () => {
   const audioRefs = useRef([]);
   const [footerTrack, setFooterTrack] = useState(null);
   const nav = useNavigate()
+  const [lowr, setlowr] = useState('')
 
   const fetchDatatwo = async () => {
     try {
@@ -97,6 +98,9 @@ const Music = () => {
   function navhome(){
     nav('/')
   }
+  function handllowr(){
+    setlowr('')
+  }
 
   return (
     <div className='homethreaddf conta'>
@@ -150,6 +154,7 @@ const Music = () => {
               <div  onClick={() => handleImageClick(index)} key={index} className="topmusic">
                 <div className="tmcard">
                   <div className="tmtmone-p">
+                    <p onClick={handllowr}>{lowr}</p>
                     <img
                       src={mix.track.album.images[0]?.url}
                       alt={mix.track.name}
